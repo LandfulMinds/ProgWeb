@@ -1,0 +1,226 @@
+/* Reset básico */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #7a7b7d;
+}
+
+/* Título */
+header h1 {
+  text-align: center;
+  color: #000000;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+/* Contêiner principal */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 50px auto;
+  height: 400px; /* Altura do contêiner */
+}
+
+/* Formulário de Login */
+.login-form {
+  width: 45%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  /* Flexbox para centralizar */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os inputs horizontalmente */
+  justify-content: center; /* Centraliza os inputs verticalmente */
+  height: 100%; /* Para que a altura do formulário ocupe o espaço do contêiner */
+}
+
+
+.login-form h2 {
+  text-align: center;
+  color: #34495e;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-form input[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Imagem de Login */
+.login-image {
+  width: 45%;
+  border-radius: 10px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.erro-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #f00;
+  cursor: pointer;
+}
+
+#overlay {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  visibility: hidden;
+}
+#teste {
+  left: 25%;
+  top: 25%;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  width: 50%;
+  color: blue;
+  font-size: 5vw;
+  background-color: #DBDBDB;
+  padding: 15px 30px;
+ /* visibility: hidden;*/
+}
+.erro {
+  border: 1px solid red;
+  border-radius: 4px;
+}
+.erro:focus {
+  outline: 2px solid red;
+  border-radius: 4px;
+}
+.erro-texto{
+  color: red !important;
+  font-size: 3vw !important;
+}
+label, input {
+  display: block;
+  margin: 10px auto;
+}
+form {
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 5% auto;
+}
+form input#idade {
+  padding: 7px;
+  width: 200px;
+}
+form input[type=submit] {
+  padding: 7px;
+  width: 214px;
+}
+.maior {
+  color: #218525 !important;
+}
+.menor {
+  color: #752383 !important;
+}
+#x {
+    position: absolute;
+    background: red;
+    color: white;
+    top: -14px;
+    right: -14px;
+    border: none;
+    border-radius: 50%;
+    font-family: Sans-serif;
+    font-size: 30px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+#x:active {
+  top: -12px;
+  right: -12px;
+  background: rgb(182,28,28);
+
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fffcfc;
+  color: black;
+  padding: 20px;
+  border: 2px solid #fff;
+}
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px; /* Mesma margem interna */
+  margin-bottom: 15px; /* Espaçamento inferior consistente */
+  border: 1px solid #ccc; /* Mesma borda */
+  border-radius: 5px; /* Cantos arredondados */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 2px solid #000; /* Mesma borda em foco */
+  outline: none; /* Remove o outline padrão */
+}
+footer {
+  border: 2px solid #ffffff;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcf801;
+  font-family: 'Courier New', Courier, monospace, Sans-serif;
+  font-size: large;
+}
